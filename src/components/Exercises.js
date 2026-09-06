@@ -1,13 +1,5 @@
-import React, { useEffect, useState } from "react";
-import Pagination from "@mui/material/Pagination";
-import { Box, Stack, Typography } from "@mui/material";
-
-import { exerciseOptions, fetchData } from "../utils/fetchData";
-import ExerciseCard from "./ExerciseCard";
-// import Loader from "./Loader";
-
-// Pagination is used to create pages like this -> 1.2.3.4.5......100
-const Exercises = ({ exercises, setExercises, bodyPart }) => {
+// 1. Give exercises a default empty array fallback
+const Exercises = ({ exercises = [], setExercises, bodyPart }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const [exercisesPerPage] = useState(6);
 
@@ -33,21 +25,21 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
     fetchExercisesData();
   }, [bodyPart, setExercises]);
 
-  // Pagination
+  // Pagination with safe optional chaining
   const indexOfLastExercise = currentPage * exercisesPerPage;
   const indexOfFirstExercise = indexOfLastExercise - exercisesPerPage;
-  const currentExercises = exercises.slice(
+  const currentExercises = exercises?.slice(
     indexOfFirstExercise,
     indexOfLastExercise
-  );
+  ) || [];
 
   const paginate = (event, value) => {
     setCurrentPage(value);
-
     window.scrollTo({ top: 1800, behavior: "smooth" });
   };
 
-  //   if (!currentExercises.length) return <Loader />;
+  // Uncomment your loader so it displays nicely if data is still loading
+  if (!currentExercises.length) return <Loader />;
 
   return (
     <Box id="exercises" sx={{ mt: { lg: "109px" } }} mt="50px" p="20px">
@@ -70,7 +62,7 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
         ))}
       </Stack>
       <Stack sx={{ mt: { lg: "114px", xs: "70px" } }} alignItems="center">
-        {exercises.length > 9 && (
+        {exercises?.length > 9 && (
           <Pagination
             color="standard"
             shape="rounded"
@@ -85,5 +77,3 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
     </Box>
   );
 };
-
-export default Exercises;
