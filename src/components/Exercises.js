@@ -77,3 +77,4 @@ const Exercises = ({ exercises = [], setExercises, bodyPart }) => {
     </Box>
   );
 };
+export default Exercises;
