@@ -1,4 +1,11 @@
-// 1. Give exercises a default empty array fallback
+import React, { useEffect, useState } from "react";
+import Pagination from "@mui/material/Pagination";
+import { Box, Stack, Typography } from "@mui/material";
+
+import { exerciseOptions, fetchData } from "../utils/fetchData";
+import ExerciseCard from "./ExerciseCard";
+import Loader from "./Loader";
+
 const Exercises = ({ exercises = [], setExercises, bodyPart }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const [exercisesPerPage] = useState(6);
@@ -25,7 +32,6 @@ const Exercises = ({ exercises = [], setExercises, bodyPart }) => {
     fetchExercisesData();
   }, [bodyPart, setExercises]);
 
-  // Pagination with safe optional chaining
   const indexOfLastExercise = currentPage * exercisesPerPage;
   const indexOfFirstExercise = indexOfLastExercise - exercisesPerPage;
   const currentExercises = exercises?.slice(
@@ -38,7 +44,6 @@ const Exercises = ({ exercises = [], setExercises, bodyPart }) => {
     window.scrollTo({ top: 1800, behavior: "smooth" });
   };
 
-  // Uncomment your loader so it displays nicely if data is still loading
   if (!currentExercises.length) return <Loader />;
 
   return (
@@ -77,4 +82,5 @@ const Exercises = ({ exercises = [], setExercises, bodyPart }) => {
     </Box>
   );
 };
+
 export default Exercises;
