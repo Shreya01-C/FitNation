@@ -95,6 +95,7 @@ npm install
 
 # Start development server
 npm run dev
+```
 ---
 
 ## Thanks for Reading!
