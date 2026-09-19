@@ -83,17 +83,18 @@ FitNation/
 ---
 
 ## Installation & SetUp
+```
+# Clone the repository
+git clone https://github.com/Shreya01-C/FitNation.git
 
-Clone the repository and install dependencies
-```
-git clone https://github.com/Shreya01-C/FitNation
+# Navigate to project directory
 cd FitNation
+
+# Install dependencies
 npm install
-```
-Run the development sever
-```
-npm start
-```
+
+# Start development server
+npm run dev
 ---
 
 ## Thanks for Reading!
