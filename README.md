@@ -83,7 +83,7 @@ FitNation/
 ---
 
 ## Installation & SetUp
-```
+```bash 
 # Clone the repository
 git clone https://github.com/Shreya01-C/FitNation.git
 
