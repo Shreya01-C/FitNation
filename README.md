@@ -32,9 +32,7 @@ A modern **ReactJS-based fitness application** built with **Material UI** compon
 
 ---
 
-## Features
-
-## 🌟 Outstanding Features
+## Key Features
 
 - **Exercise Search** : Quickly find workouts by muscle group or equipment, making it easy to personalize fitness routines.
 - **Integrated Workout Videos** : Each exercise comes with demo clips from YouTube, so users can follow along visually.  
