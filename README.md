@@ -32,8 +32,19 @@ A modern **ReactJS-based fitness application** built with **Material UI** compon
 
 ---
 
-## Project structure
+## Features
 
+## 🌟 Outstanding Features
+
+- **Exercise Search** : Quickly find workouts by muscle group or equipment, making it easy to personalize fitness routines.
+- **Integrated Workout Videos** : Each exercise comes with demo clips from YouTube, so users can follow along visually.  
+- **Workout Demo Videos** : Built with Material UI, the design adapts beautifully across mobile, tablet, and desktop.  
+- **Smooth User Experience** : Fast navigation, clean layouts, and subtle loading animations keep the app feeling professional and polished.   
+
+---
+
+## Project structure
+```
 FitNation/
 ├── build/                     # Production build output
 │   ├── asset-manifest.json
@@ -70,7 +81,7 @@ FitNation/
 ├── package.json               # Dependencies & scripts
 ├── package-lock.json          # Dependency lock file
 └── .gitignore                 # Git ignore rules
-
+```
 ---
 
 ## Installation & SetUp
