@@ -16,6 +16,7 @@ A modern **ReactJS-based fitness application** built with **Material UI** compon
 <img width="960" alt="gym2" src="https://user-images.githubusercontent.com/93420193/182025198-de6b6d45-7d0a-4e2b-8297-90abb012f49f.png">
 <img width="960" alt="gym3" src="https://user-images.githubusercontent.com/93420193/182025199-fee3f5ea-4996-4d67-8d13-7bf1059ffa94.png">
 <img width="960" alt="gym4" src="https://github.com/user-attachments/assets/63b6b692-25d0-4bba-942d-48e6b5eef0d6"">
+
 <img width="960" alt="gym5" src="https://user-images.githubusercontent.com/93420193/182025209-f1b19425-0d09-4ac1-9a6d-a0db625a600e.png">
 <img width="960" alt="gym6" src="https://user-images.githubusercontent.com/93420193/182025211-65492cca-739d-4a4b-8ef5-bcdac0b8db16.png">
 
